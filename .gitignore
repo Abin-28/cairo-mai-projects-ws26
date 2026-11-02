@@ -1,0 +1,70 @@
+# ---------- Secrets & local config (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+token.json
+client_secret*.json
+
+# ---------- Real / sensitive data (NEVER commit) ----------
+# Only anonymised or synthetic data belongs in the repo, in data/sample/
+data/raw/
+data/private/
+*.pst
+*.ost
+*.eml
+*.msg
+*.mbox
+**/real_data/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ---------- Models, vector stores, caches ----------
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+chroma/
+chroma_db/
+.chroma/
+*.faiss
+*.sqlite3
+*.db
+models/
+.cache/
+ollama/
+
+# ---------- Node (front-ends) ----------
+node_modules/
+
+# ---------- Logs & temp ----------
+*.log
+logs/
+tmp/
+*.tmp
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
